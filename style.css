@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: .2s;
+    background: #dadada;
+    
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+#loader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 4s   both;
+}
+#wrapperload{
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+
+}
+#wrapperload .elem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#wrapperload .elem img{
+    width: 40%;
+    background: none;
+}
+#wrapperload .elem:nth-child(1){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1s   both;
+}
+#wrapperload .elem:nth-child(2){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 2s   both;
+}
+#wrapperload .elem:nth-child(3){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 3s   both;
+}
+@keyframes anim {
+    to{
+        margin-top: -100px;
+    }
+}
+@keyframes anim2 {
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+#bg {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+nav {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+nav .logo-side {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+nav a img{
+    width: 50px;
+    cursor: pointer;
+    opacity: .9;
+    transition: .2s;
+    border-radius: 100%;
+}
+nav img:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+
+nav .links-side {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+
+}
+
+nav .links-side a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+
+}
+nav .links-side a::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: gray;
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease-in-out;
+
+}
+nav .links-side a:hover::after{
+    opacity: 100;
+    width: 100%;
+}
+
+
+nav .links-side a:nth-child(2) {
+    opacity: .6;
+}
+nav .links-side a:nth-child(2):hover{
+    opacity: 1;
+
+}
+
+nav .links-side i {
+    margin-left: 50px;
+    cursor: pointer;
+    
+}
+nav .links-side i:hover{
+    transform: scale(1.2);
+}
+.sections{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+}
+.sections .left{
+    width: 50%;
+    height: 100%;
+    padding: 100px;
+    margin-top: -30px;
+
+}
+
+.left h4{
+    font-size: 35px;
+    font-family: 'Segoe Script', sans-serif;
+    opacity: .8;
+    
+}
+.left>h5{
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    word-spacing: 5px;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.471)
+    
+}
+.left span{
+    opacity: .9;
+    color: black;
+}
+.left h4 img{
+    display: inline-block;
+    width: 250px;
+    position: relative;;
+    top: 15px;
+   
+}
+.btn{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    position: relative;
+    left: -5px;
+}
+.btn img{
+    width: 60px;
+    cursor: pointer;
+    border-radius: 100%;
+    opacity: .8;
+}
+.btn img:hover{
+    opacity: 1;
+}
+.btn img:active{
+    transform: scale(1.1);
+
+}
+.btn>h5{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: .8;
+}
+.contact{
+    margin-top: 140px;
+
+}
+.contact h3{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    word-spacing: 5px;
+    font-size: 13px;
+    opacity: .7;
+    margin-bottom: 25px;
+
+}
+.contact h6{
+    color: rgba(0, 0, 0, 0.516);
+    letter-spacing: 4px;
+    font-size: 9px;
+    
+}
+.contact span{
+    margin-left: 5px;
+    cursor: pointer;
+    letter-spacing: .5px;
+}
+.contact>h6{
+    margin-bottom: 5px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+}
+.right img{
+    width: 535px;
+    margin-left: 70px;
+    transition: .5s;
+}
+.right img:hover{
+    transform: scale(1.01);
+}
+.right img:active{
+    transform: scale(1.1);
+
+}
+.sections>img{
+    position: absolute;
+}
