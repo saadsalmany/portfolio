@@ -92,7 +92,7 @@ nav .logo-side {
 nav a img{
     width: 50px;
     cursor: pointer;
-    opacity: .9;
+    opacity: .9 ;
     transition: .2s;
     border-radius: 100%;
 }
@@ -171,7 +171,7 @@ nav .links-side i:hover{
 .left h4{
     font-size: 35px;
     font-family: 'Segoe Script', sans-serif;
-    opacity: .8;
+    /* opacity: .8; */
     
 }
 .left>h5{
@@ -179,18 +179,15 @@ nav .links-side i:hover{
     letter-spacing: 2.5px;
     word-spacing: 5px;
     margin-top: 20px;
-    color: rgba(0, 0, 0, 0.471)
     
 }
-.left span{
-    opacity: .9;
-    color: black;
-}
+
 .left h4 img{
     display: inline-block;
     width: 250px;
     position: relative;;
     top: 15px;
+    opacity: 1;
    
 }
 .btn{
@@ -205,7 +202,7 @@ nav .links-side i:hover{
     width: 60px;
     cursor: pointer;
     border-radius: 100%;
-    opacity: .8;
+    /* opacity: .8; */
 }
 .btn img:hover{
     opacity: 1;
@@ -218,7 +215,7 @@ nav .links-side i:hover{
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    opacity: .8;
+    /* opacity: .8; */
 }
 .contact{
     margin-top: 140px;
@@ -229,12 +226,11 @@ nav .links-side i:hover{
     letter-spacing: 6px;
     word-spacing: 5px;
     font-size: 13px;
-    opacity: .7;
     margin-bottom: 25px;
 
 }
 .contact h6{
-    color: rgba(0, 0, 0, 0.516);
+    color: black;
     letter-spacing: 4px;
     font-size: 9px;
     
