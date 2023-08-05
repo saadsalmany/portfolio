@@ -125,7 +125,7 @@ nav img:hover {
 nav .links-side {
     display: flex;
     align-items: center;
-    padding-right: 30px;
+    padding-right: 50px;
 
 }
 
@@ -170,6 +170,14 @@ nav .links-side a:nth-child(2):hover {
     opacity: 1;
 
 }
+nav .links-side a:nth-child(3) {
+    opacity: .6;
+}
+
+nav .links-side a:nth-child(3):hover {
+    opacity: 1;
+
+}
 
 nav .links-side i {
     margin-left: 50px;
@@ -207,7 +215,14 @@ nav .links-side i:hover {
     letter-spacing: 2.5px;
     word-spacing: 5px;
     margin-top: 20px;
-
+    color: rgba(0, 0, 0, 0.689);
+    
+}
+.left>h5 span{
+    color: black;
+}
+#element{
+    color: black;
 }
 
 .left h4 img {
@@ -230,7 +245,7 @@ nav .links-side i:hover {
 }
 
 .btn img {
-    width: 60px;
+    width: 40px;
     cursor: pointer;
     border-radius: 100%;
     transition: .3s;
@@ -246,11 +261,22 @@ nav .links-side i:hover {
 
 }
 
-.btn>h5 {
+.btn a h5 {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    /* opacity: .8; */
+    cursor: pointer;
+    transition: .1s;
+    transform: scale(.99);
+    
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+
+}
+.btn a h5:active{
+    transform: scale(1);
 }
 
 .contact {
@@ -272,6 +298,13 @@ nav .links-side i:hover {
     letter-spacing: 4px;
     font-size: 9px;
 
+}
+.contact h6 a{
+    color: black;
+    text-decoration: none;
+}
+.contact h6 a:hover{
+    opacity: .7;
 }
 
 .contact span {
