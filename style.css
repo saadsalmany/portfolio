@@ -7,17 +7,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-#canvas1 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient(white,white, gray);
-    
-}
-
 html,
 body {
     width: 100%;
@@ -37,7 +26,7 @@ body {
     align-items: center;
     z-index: 2;
     animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 4s both;
-    background: linear-gradient(white,white, gray); 
+    background: white;
 }
 
 #wrapperload {
@@ -84,8 +73,8 @@ body {
     }
 }
 
-#bg {
-    width: 100vw;
+#page1 {
+    width: 100%;
     height: 100vh;
 }
 
@@ -116,7 +105,7 @@ nav a img {
 
 nav img:hover {
     transform: scale(1.1);
-    border: 1px solid black;
+    border: 1px solid #212121;
 }
 
 nav .links-side {
@@ -129,7 +118,7 @@ nav .links-side {
 nav .links-side a {
     margin-left: 50px;
     text-decoration: none;
-    color: black;
+    color: #212121;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px;
@@ -167,6 +156,7 @@ nav .links-side a:nth-child(2):hover {
     opacity: 1;
 
 }
+
 nav .links-side a:nth-child(3) {
     opacity: .6;
 }
@@ -176,15 +166,16 @@ nav .links-side a:nth-child(3):hover {
 
 }
 
-nav .links-side i {
-    margin-left: 50px;
-    cursor: pointer;
+nav .links-side a:nth-child(4) {
+    opacity: .6;
+}
+
+nav .links-side a:nth-child(4):hover {
+    opacity: 1;
 
 }
 
-nav .links-side i:hover {
-    transform: scale(1.2);
-}
+
 
 .sections {
     width: 100%;
@@ -200,10 +191,10 @@ nav .links-side i:hover {
 
 }
 
-.left h4 {
+.left>h4 {
     font-size: 35px;
     font-family: 'Segoe Script', sans-serif;
-    /* opacity: .8; */
+    color: rgba(0, 0, 0, 0.795);
 
 }
 
@@ -211,108 +202,121 @@ nav .links-side i:hover {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     word-spacing: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: rgba(0, 0, 0, 0.689);
-    
+
 }
-.left>h5 span{
-    color: black;
+
+.left>h5 span {
+    color: #212121;
 }
-#element{
-    color: black;
+
+#element {
+    color: #212121;
 }
 
 .left h4 img {
     display: inline-block;
     width: 250px;
     position: relative;
-    ;
     top: 15px;
     opacity: 1;
 
 }
-
-.btn {
+.socialIcons{
     display: flex;
-    align-items: center;
-    margin-top: 30px;
     gap: 20px;
-    position: relative;
-    left: -5px;
-}
-
-.btn img {
-    width: 40px;
-    cursor: pointer;
-    border-radius: 100%;
-    transition: .3s;
-    transform: scale(.9);
-}
-
-.btn img:hover {
-    transform: scale(1);
-}
-
-.btn img:active {
-    transform: scale(1.1);
+    margin-top: 20px;
 
 }
-
-.btn a h5 {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    cursor: pointer;
-    transition: .1s;
-    transform: scale(.99);
-    
-}
-.btn a{
+.socialIcons a{
     text-decoration: none;
     color: black;
-
 }
-.btn a h5:active{
-    transform: scale(1);
+.socialIcons a i{
+    font-size:  40px;
+    color: #212121;
+    transform: scale(.8);
 }
-
-.contact {
-    margin-top: 140px;
-
-}
-
-.contact h3 {
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    word-spacing: 5px;
-    font-size: 13px;
-    margin-bottom: 25px;
-
+.socialIcons a i:hover{
+    opacity: .6;
 }
 
-.contact h6 {
-    color: black;
-    letter-spacing: 4px;
-    font-size: 9px;
+
+.sections .btn {
+    margin-top: 35px;
+    display: flex;
+    gap: 45px;
+
 
 }
-.contact h6 a{
-    color: black;
-    text-decoration: none;
-}
-.contact h6 a:hover{
-    opacity: .7;
-}
 
-.contact span {
-    margin-left: 5px;
+.btn button {
+    border: none;
     cursor: pointer;
-    letter-spacing: .5px;
+    background: white;
+    color: #212121;
+    padding: 9px 17px;
+    border: 1px solid #212121;
 }
 
-.contact>h6 {
-    margin-bottom: 5px;
+.btn .servicesBtn button {
+    background: #212121;
+    color: white;
 }
+
+
+
+.btn .servicesBtn button:active {
+    background-color: white;
+    color: #212121;
+}
+
+.btn .contactBtn button:active {
+    background-color: #212121;
+    color: white;
+}
+
+
+.scrollText {
+    margin-top: 120px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.scrollText h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/* Define the keyframes for the bounce animation */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Apply the bounce animation to the img element */
+.scrollText img {
+    animation: bounce 2s infinite;
+}
+
 
 .right {
     width: 50%;
@@ -345,4 +349,9 @@ nav .links-side i:hover {
 
 .sections>img {
     position: absolute;
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
 }
