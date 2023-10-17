@@ -346,6 +346,22 @@ nav .links-side a:nth-child(4):hover {
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+    animation: rightImgAnim 2.5s infinite ease-in-out;
+}
+@keyframes rightImgAnim {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+    
 }
 
 .right img:hover {
@@ -358,6 +374,7 @@ nav .links-side a:nth-child(4):hover {
     transform: scale(1.1);
 
 }
+
 
 .sections>img {
     position: absolute;
