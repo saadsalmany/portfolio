@@ -76,7 +76,9 @@ body {
 
 #page1 {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh + 70px);
+    background: url(images/wave-haikei.svg) no-repeat;
+    background-size: cover;
 }
 
 
@@ -91,7 +93,7 @@ nav {
     overflow: hidden;
     position: fixed;
     background-color: white;
-    box-shadow: 0px -8px 20px 6px black;
+    box-shadow: 0px -8px 20px .1px black;
 
 
 }
@@ -106,12 +108,12 @@ nav .logo-side {
 nav a img {
     width: 50px;
     cursor: pointer;
-    transition: .1s ease-in-out;
+    transition: .3s ease-in-out;
     border-radius: 100%;
 }
 
 nav img:hover {
-    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #3333;
 }
 
 nav .links-side {
@@ -124,7 +126,7 @@ nav .links-side {
 nav .links-side a {
     margin-left: 50px;
     text-decoration: none;
-    color: #212121;
+    color: #333;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px;
@@ -153,7 +155,7 @@ nav .links-side a:hover::after {
     width: 100%;
 }
 
-
+/* 
 nav .links-side a:nth-child(2) {
     opacity: .6;
 }
@@ -179,7 +181,7 @@ nav .links-side a:nth-child(4) {
 nav .links-side a:nth-child(4):hover {
     opacity: 1;
 
-}
+} */
 
 
 
@@ -215,11 +217,11 @@ nav .links-side a:nth-child(4):hover {
 }
 
 .left>h5 span {
-    color: #212121;
+    color: #333;
 }
 
 #element {
-    color: #212121;
+    color: #333;
 }
 
 .left h4 img {
@@ -242,7 +244,7 @@ nav .links-side a:nth-child(4):hover {
 }
 .socialIcons a i{
     font-size:  40px;
-    color: #212121;
+    color: #333;
     transform: scale(.8);
 }
 .socialIcons a i:hover{
@@ -262,13 +264,13 @@ nav .links-side a:nth-child(4):hover {
     border: none;
     cursor: pointer;
     background: white;
-    color: #212121;
+    color: #333;
     padding: 9px 17px;
-    border: 1px solid #212121;
+    border: 1px solid #333;
 }
 
 .btn .servicesBtn button {
-    background: #212121;
+    background: #333;
     color: white;
 }
 .btn .servicesBtn button:hover{
@@ -279,11 +281,11 @@ nav .links-side a:nth-child(4):hover {
 
 .btn .servicesBtn button:active {
     background-color: white;
-    color: #212121;
+    color: #333;
 }
 
 .btn .contactBtn button:active {
-    background-color: #212121;
+    background-color: #333;
     color: white;
 }
 .btn .contactBtn button:hover{
@@ -339,9 +341,8 @@ nav .links-side a:nth-child(4):hover {
     width: 500px;
     margin-left: 120px;
     margin-top: 25px;
-    -webkit-filter: drop-shadow(-3px 20px 10px #313131);
-    filter: drop-shadow(-3px 20px 10px #313131);
-    transform: scale(.95);
+    -webkit-filter: drop-shadow(0px 0px 5px #fff);
+    /* filter: drop-shadow(1px -1px 0px #fff); */
     transition: .5s;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -357,9 +358,6 @@ nav .links-side a:nth-child(4):hover {
 
     50%{
         transform: translateY(-10px);
-        -webkit-filter: drop-shadow(-3px 40px 10px #313131);
-        filter: drop-shadow(-3px 40px 10px #313131);
-        
     }
     100%{
         transform: translateY(0px);
@@ -369,10 +367,6 @@ nav .links-side a:nth-child(4):hover {
 }
 
 
-.right img:active {
-    transform: scale(1.1);
-
-}
 
 
 .sections>img {
@@ -381,17 +375,15 @@ nav .links-side a:nth-child(4):hover {
 
 .page2 {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh + 70px);
     display: flex;
+    background-color: #333;
+
+
     
 }
-
 .myService{
     text-align: center;
     position: relative;
     right: 50%;
-}
-.myService h1{
-    background:#212121;
-    color: white;
 }
