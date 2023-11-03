@@ -11,6 +11,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    /* -webkit-font-smoothing:antialiased;       */
 
 }
 
@@ -105,13 +106,12 @@ nav .logo-side {
 nav a img {
     width: 50px;
     cursor: pointer;
-    transition: .2s;
+    transition: .1s ease-in-out;
     border-radius: 100%;
 }
 
 nav img:hover {
-    transform: scale(1.1);
-    border: 1px solid #212121;
+    transform: scale(1.05);
 }
 
 nav .links-side {
@@ -336,8 +336,9 @@ nav .links-side a:nth-child(4):hover {
 }
 
 .right img {
-    width: 600px;
-    margin-left: 70px;
+    width: 500px;
+    margin-left: 120px;
+    margin-top: 25px;
     -webkit-filter: drop-shadow(-3px 20px 10px #313131);
     filter: drop-shadow(-3px 20px 10px #313131);
     transform: scale(.95);
@@ -348,6 +349,7 @@ nav .links-side a:nth-child(4):hover {
     -o-transition: all 0.5s ease-in-out;
     animation: rightImgAnim 2.5s infinite ease-in-out;
 }
+
 @keyframes rightImgAnim {
     0%{
         transform: translateY(0px);
@@ -355,7 +357,9 @@ nav .links-side a:nth-child(4):hover {
 
     50%{
         transform: translateY(-10px);
-
+        -webkit-filter: drop-shadow(-3px 40px 10px #313131);
+        filter: drop-shadow(-3px 40px 10px #313131);
+        
     }
     100%{
         transform: translateY(0px);
@@ -364,11 +368,6 @@ nav .links-side a:nth-child(4):hover {
     
 }
 
-.right img:hover {
-    -webkit-filter: drop-shadow(-3px 40px 10px #313131);
-    filter: drop-shadow(-3px 40px 10px #313131);
-    transform: scale(1);
-}
 
 .right img:active {
     transform: scale(1.1);
@@ -383,4 +382,16 @@ nav .links-side a:nth-child(4):hover {
 .page2 {
     width: 100%;
     height: 100vh;
+    display: flex;
+    
+}
+
+.myService{
+    text-align: center;
+    position: relative;
+    right: 50%;
+}
+.myService h1{
+    background:#212121;
+    color: white;
 }
