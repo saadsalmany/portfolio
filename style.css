@@ -27,7 +27,7 @@ body {
     align-items: center;
     z-index: 3;
     animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 4s both;
-    background: white;
+    background: #181614;
 }
 
 #wrapperload {
@@ -42,6 +42,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 
 }
 
@@ -78,23 +79,21 @@ body {
 #page1 {
     width: 100%;
     height: calc(100vh + 70px);
-    background: url(images/wave-haikei.svg) no-repeat;
-    background-size: cover;
+    background-color: #181614;
+
 }
 
 
 nav {
     width: 100%;
-    height: 70px;
-    margin: 0 auto;
+    height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 2;
     overflow: hidden;
     position: fixed;
-    background-color: white;
-    box-shadow: 0px -8px 20px .1px black;
+    background-color: #181614;
 
 
 }
@@ -104,6 +103,12 @@ nav .logo-side {
     display: flex;
     align-items: center;
     padding-left: 30px;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+    
 }
 
 nav a img {
@@ -114,24 +119,24 @@ nav a img {
 }
 
 nav img:hover {
-    box-shadow: 0px 0px 8px #333;
+    box-shadow: 0px 0px 8px white;
 }
 
 nav .links-side {
     display: flex;
     align-items: center;
     padding-right: 50px;
+    margin-top: 20px;
 
 }
 
 nav .links-side a {
     margin-left: 50px;
     text-decoration: none;
-    color: #333;
+    color: white;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 2px;
-    font-weight: bold;
 
 
 }
@@ -204,7 +209,7 @@ nav .links-side a:nth-child(4):hover {
 .left>h4 {
     font-size: 35px;
     font-family: 'Segoe Script', sans-serif;
-    color: rgba(0, 0, 0, 0.795);
+    color: white;
 
 }
 
@@ -213,16 +218,16 @@ nav .links-side a:nth-child(4):hover {
     letter-spacing: 2.5px;
     word-spacing: 5px;
     margin-top: 10px;
-    color: rgba(0, 0, 0, 0.689);
+    color:white;
 
 }
 
 .left>h5 span {
-    color: #333;
+    color: white;
 }
 
 #element {
-    color: #333;
+    color: white;
 }
 
 .left h4 img {
@@ -243,12 +248,11 @@ nav .links-side a:nth-child(4):hover {
 
 .socialIcons a {
     text-decoration: none;
-    color: black;
 }
 
 .socialIcons a i {
     font-size: 40px;
-    color: #333;
+    color: white;
     transform: scale(.8);
 }
 
@@ -260,38 +264,28 @@ nav .links-side a:nth-child(4):hover {
 .sections .btn {
     margin-top: 35px;
     display: flex;
-    gap: 45px;
+    align-items: center;
+    gap: 20px;
 
 
+}
+.btn .text{
+    color: white;
 }
 
 .btn button {
     border: none;
     cursor: pointer;
-    background: white;
-    color: #333;
-    padding: 9px 17px;
-    border: 1px solid #333;
-}
-
-.btn .servicesBtn button {
-    background: #333;
+    background-color: #181614;
     color: white;
+    padding: 9px 17px;
+    border: 0.5px solid white;
 }
 
-.btn .servicesBtn button:hover {
-    transform: translateY(-2px)
-}
 
-
-
-.btn .servicesBtn button:active {
-    background-color: white;
-    color: #333;
-}
 
 .btn .contactBtn button:active {
-    background-color: #333;
+    background-color: white;
     color: white;
 }
 
@@ -311,6 +305,7 @@ nav .links-side a:nth-child(4):hover {
     font-weight: lighter;
     letter-spacing: 1px;
     word-spacing: 4px;
+    color: white;
 }
 
 /* Define the keyframes for the bounce animation */
@@ -344,18 +339,20 @@ nav .links-side a:nth-child(4):hover {
     height: 100%;
 }
 
-.right img {
-    width: 500px;
-    margin-left: 120px;
+.right>img {
+    width: 450px;
+    margin-left: 40px;
     margin-top: 25px;
-    -webkit-filter: drop-shadow(0px 0px 5px #fff);
-    /* filter: drop-shadow(1px -1px 0px #fff); */
     transition: .5s;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     animation: rightImgAnim 2.5s infinite ease-in-out;
+}
+.shadow{
+    animation: shadowanim 2.5s infinite ease-in-out;
+
 }
 
 @keyframes rightImgAnim {
@@ -373,6 +370,21 @@ nav .links-side a:nth-child(4):hover {
 
 
 }
+@keyframes shadowanim {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+
+}
 
 
 
@@ -385,5 +397,5 @@ nav .links-side a:nth-child(4):hover {
     width: 100%;
     height: calc(100vh + 70px);
     display: flex;
-    background-color: #333;
+    background-color: white;
 }
