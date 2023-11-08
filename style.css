@@ -11,7 +11,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    /* -webkit-font-smoothing:antialiased;       */
+    background-color: #181614;
 
 }
 
@@ -284,13 +284,14 @@ nav .links-side a:nth-child(4):hover {
 
 
 
-.btn .contactBtn button:active {
-    background-color: white;
-    color: white;
+.btn .TalkBtn button:active {
+    transform: translateY(-2px)
+
 }
 
-.btn .contactBtn button:hover {
-    transform: translateY(-2px)
+.btn .TalkBtn button:hover {
+    background-color: #ffffff16;
+    color: #ffffff;
 }
 
 .scrollText {
@@ -397,5 +398,115 @@ nav .links-side a:nth-child(4):hover {
     width: 100%;
     height: calc(100vh + 70px);
     display: flex;
+    background-color: #181614;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 170px;
+}
+.page2 .project-title{
+    width: 250px;
+    height: 90px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    
+}
+.page2 .project-title img,h2{
+    width: 55px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    
+
+}
+.cards .cd{
+    width: 410px;
+    height: 500px;
+    border: 1px solid white;
+    border-radius: 40px;
+    
+}
+.cards .card1,.card2,.card3{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+
+}
+.card1 .webImg{
+    width: 350px;
+    height: 300px;
+    background-image: url(images/website-image.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.card1 .pText{
+    color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 300px;
+padding-top: 15px;
+padding-bottom: 25px;
+}
+.card1 .pBtn{
+    width: 240px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+    
+    
+}
+.pBtn .div1{
+    font-size: 20px;
+    color: white;
+}
+.pBtn .div2{
+    background-color: white;
+    width: 130px;
+    height: 50px;
+    border-radius: 20px;
+    color: #181614;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pBtn .div2>img{
+    width: 35px;
+}
+
+.card2 .pbg{
+    width: 350px;
+    height: 300px;
+    background-image: url(images/uiux-image.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.card3 .pbg{
+    width: 350px;
+    height: 300px;
+    background-image: url(images/app-img.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid white;
+    border-radius: 40px;
 }
