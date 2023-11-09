@@ -66,7 +66,7 @@ body {
 @keyframes anim {
     to {
         margin-top: -100px;
-        
+
     }
 }
 
@@ -78,7 +78,7 @@ body {
 
 #page1 {
     width: 100%;
-    height: calc(100vh + 70px);
+    height: 100vh;
     background-color: #181614;
 
 }
@@ -107,8 +107,8 @@ nav .logo-side {
     left: 0;
     margin-top: 20px;
     margin-left: 30px;
-    
-    
+
+
 }
 
 nav a img {
@@ -139,6 +139,33 @@ nav .links-side a {
     letter-spacing: 2px;
 
 
+}
+
+nav .links-side .contactbtn {
+    background-color: white;
+    color: #181614;
+    position: relative;
+    left: 300px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    border: 1px solid white;
+}
+
+nav .links-side .contactbtn:hover {
+    background-color: #181614;
+    color: white;
+    border: 1px solid white;
+}
+
+nav .links-side .contactbtn:active {
+    background-color: white;
+    color: #181614;
 }
 
 nav .links-side a::after {
@@ -218,7 +245,7 @@ nav .links-side a:nth-child(4):hover {
     letter-spacing: 2.5px;
     word-spacing: 5px;
     margin-top: 10px;
-    color:white;
+    color: white;
 
 }
 
@@ -269,7 +296,8 @@ nav .links-side a:nth-child(4):hover {
 
 
 }
-.btn .text{
+
+.btn .text {
     color: white;
 }
 
@@ -286,7 +314,6 @@ nav .links-side a:nth-child(4):hover {
 
 .btn .TalkBtn button:active {
     transform: translateY(-2px)
-
 }
 
 .btn .TalkBtn button:hover {
@@ -351,7 +378,8 @@ nav .links-side a:nth-child(4):hover {
     -o-transition: all 0.5s ease-in-out;
     animation: rightImgAnim 2.5s infinite ease-in-out;
 }
-.shadow{
+
+.shadow {
     animation: shadowanim 2.5s infinite ease-in-out;
 
 }
@@ -371,6 +399,7 @@ nav .links-side a:nth-child(4):hover {
 
 
 }
+
 @keyframes shadowanim {
     0% {
         opacity: 1;
@@ -396,15 +425,17 @@ nav .links-side a:nth-child(4):hover {
 
 .page2 {
     width: 100%;
-    height: calc(100vh + 70px);
+    height: 100vh;
     display: flex;
     background-color: #181614;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    padding: 170px;
+    gap: 150px;
+    margin-top: 150px;
+    /* padding: 170px; */
 }
-.page2 .project-title{
+
+.page2 .project-title {
     width: 250px;
     height: 90px;
     background-color: white;
@@ -413,34 +444,42 @@ nav .links-side a:nth-child(4):hover {
     justify-content: center;
     gap: 20px;
     padding: 10px;
-    
+
 }
-.page2 .project-title img,h2{
+
+.page2 .project-title img,
+h2 {
     width: 55px;
 }
-.cards{
+
+.cards {
     display: flex;
     flex-direction: row;
     gap: 50px;
 
-    
+
 
 }
-.cards .cd{
+
+.cards .cd {
     width: 410px;
     height: 500px;
     border: 1px solid white;
     border-radius: 40px;
-    
+
 }
-.cards .card1,.card2,.card3{
+
+.cards .card1,
+.card2,
+.card3 {
     display: flex;
     align-items: center;
     padding-top: 20px;
     flex-direction: column;
 
 }
-.card1 .webImg{
+
+.card1 .webImg {
     width: 350px;
     height: 300px;
     background-image: url(images/website-image.png);
@@ -449,19 +488,21 @@ nav .links-side a:nth-child(4):hover {
     border: 1px solid white;
     border-radius: 40px;
 }
-.card1 .pText{
+
+.card1 .pText {
     color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-width: 300px;
-padding-top: 15px;
-padding-bottom: 25px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 300px;
+    padding-top: 15px;
+    padding-bottom: 25px;
 }
-.card1 .pBtn{
+
+.card1 .pBtn {
     width: 240px;
     height: 50px;
     border: 1px solid white;
@@ -469,15 +510,14 @@ padding-bottom: 25px;
     display: flex;
     align-items: center;
     padding-left: 20px;
-    
-    
-    
 }
-.pBtn .div1{
+
+.pBtn .div1 {
     font-size: 20px;
     color: white;
 }
-.pBtn .div2{
+
+.pBtn .div2 {
     background-color: white;
     width: 130px;
     height: 50px;
@@ -486,13 +526,25 @@ padding-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative;
+    left: 8px;
+    border: 1px solid white;
 }
-.pBtn .div2>img{
+
+.pBtn .div2:hover {
+    transform: scale(1.1);
+}
+
+.pBtn .div2>a {
     width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #181614;
 }
 
-.card2 .pbg{
+.card2 .pbg {
     width: 350px;
     height: 300px;
     background-image: url(images/uiux-image.png);
@@ -501,7 +553,36 @@ padding-bottom: 25px;
     border: 1px solid white;
     border-radius: 40px;
 }
-.card3 .pbg{
+
+.card2 .pText {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 300px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.card2 .pBtn {
+    width: 240px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.card2 .pBtn .div2 {
+    left: 33px;
+}
+
+
+.card3 .pbg {
     width: 350px;
     height: 300px;
     background-image: url(images/app-img.png);
@@ -509,4 +590,99 @@ padding-bottom: 25px;
     background-size: cover;
     border: 1px solid white;
     border-radius: 40px;
+}
+
+.card3 .pText {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 300px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.card3 .pBtn {
+    width: 240px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.card3 .pBtn .div1 {
+    font-size: 13px
+}
+
+.page3 {
+    width: 100%;
+    height: 300vh;
+    background-color: #181614;
+    display: flex;
+    align-items: center;
+    /* padding: 170px; */
+    margin-top: 180px;
+    flex-direction: column;
+    gap: 350px;
+
+}
+
+.page3 .services-title {
+    width: 270px;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+
+}
+
+.page3 .services-title img,
+h2 {
+    width: 55px;
+}
+
+.page3 .slines{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    position: relative;
+    bottom: 345px;
+}
+.page3 .slines h3{
+    color: white;
+    position: absolute;
+    font-weight: lighter;
+    width: fit-content;
+    height: fit-content;
+}
+.page3 .slines .wdheading{
+    left: -180px;
+    bottom: 5px;
+}
+.page3 .slines .uiuxheading{
+    left: 187px;
+    bottom: 27px;
+}
+.page3 .slines .adheading{
+    left: 530px;
+    bottom: 4px;
+}
+
+.page3 .serviceSection{
+    display: flex;
+    gap: 250px;
+    flex-direction: row;
+    position: relative;
+    bottom: 660px;
+
+}
+.page3 .serviceSection .service{
 }
