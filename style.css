@@ -626,7 +626,7 @@ h2 {
     display: flex;
     align-items: center;
     /* padding: 170px; */
-    margin-top: 180px;
+    margin-top: 300px;
     flex-direction: column;
     gap: 350px;
 
@@ -683,7 +683,7 @@ h2 {
     position: relative;
     bottom: 660px;
     flex-direction: row;
-
+    
 }
 .page3 .serviceTexts{
     display: flex;
@@ -700,7 +700,7 @@ h2 {
     /* width: 150px; */
     text-align: center;
     position: relative;
-
+    
 }
 .text1{
     top: -45px;
@@ -716,4 +716,134 @@ h2 {
     top: -162px;
     right: -346px;
     width: 141px;
+}
+.page4{
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+}
+.page4 .contact-title {
+    width: 270px;
+    height: 70px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+
+}
+.page4 .contact-title img{
+    width: 270px;
+
+}
+.page4 .contact-contents{
+    display: flex;
+    gap: 450px;
+}
+.page4 .contact-contents .cs{
+    position: relative;
+    top: 125px;
+
+}
+.page4 .contact-contents .Csection1{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.page4 .contact-contents .Csection2 .contactForm{
+    border: 1px solid white;
+    border-radius: 17px;
+    width: 400px;
+    height: 580px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding: 30px;   
+    gap: 50px;
+    
+}
+.page4 .contact-contents .Csection2 .contactForm .inputt{
+    display: flex;
+    flex-direction: column;
+
+}
+.page4 .contact-contents .Csection2 .contactForm h2{
+    width: fit-content;
+}
+.page4 .contact-contents .Csection2 .contactForm .inputt input{
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    /* border-radius: 17px; */
+    outline: none;
+    height: 25px;
+    margin-bottom: -20px;
+    
+}
+/* .page4 .contact-contents .Csection2 .contactForm .inputt     */
+
+
+.page4 .contact-contents .Csection2 .contactForm .inputt label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: smaller;
+}
+.page4 .contact-contents .Csection2 .contactForm .inputt label img{
+    width: 20px;
+}
+#messageArea{
+    padding: 20px;
+    background: none;
+    outline: none;
+    /* border: none; */
+    border-radius: 17px;
+    color: white;
+    height: 150px;
+    margin-top: 20px;
+    overflow: hidden;
+    resize: none;
+    line-height: 20px;
+    
+}
+.sumbitBtn button{
+    padding: 5px 20px;
+    position: relative;
+    bottom: 20px;
+    left: -9px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 17px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.sumbitBtn button:nth-child(2){
+    background: white;
+    color: #181614;
+
+}
+.sumbitBtn button:nth-child(1):hover{
+    background: white;
+    color: #181614;
+}
+.sumbitBtn button:nth-child(2):hover{
+    background-color: #181614;
+    color: white;
+}
+.sumbitBtn button:nth-child(1):active{
+    background: #181614;
+    color: white;
+}
+.sumbitBtn button:nth-child(2):active{
+    color: #181614;
+    background-color: white;
 }
