@@ -317,8 +317,8 @@ nav .links-side a:nth-child(4):hover {
 }
 
 .btn .TalkBtn button:hover {
-    background-color: #ffffff16;
-    color: #ffffff;
+    background-color: white;
+    color: #181614;
 }
 
 .scrollText {
@@ -718,22 +718,11 @@ h2 {
     width: 141px;
 }
 .page4{
-    height: 200vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 250px;
-}
-.page4 .contact-title {
-    width: 270px;
-    height: 70px;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-
 }
 .page4 .contact-title img{
     width: 270px;
@@ -753,6 +742,7 @@ h2 {
     flex-direction: column;
     gap: 100px;
 }
+
 .page4 .contact-contents .Csection2 .contactForm{
     border: 1px solid white;
     border-radius: 17px;
@@ -846,4 +836,82 @@ h2 {
 .sumbitBtn button:nth-child(2):active{
     color: #181614;
     background-color: white;
+}
+.page5{
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+.page5 .about-title img{
+    width: 275px;
+
+}
+.page5 .about-text{
+    text-align: center;
+    color: white;
+    width: 1000px;
+    margin-top: 50px;
+}
+.page5 .skilled{
+    display: flex;
+    gap: 150px;
+    margin-top: 155px;
+    justify-content: center;
+}
+footer{
+    border: 1px solid white;
+    height: 220px;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.name img{
+    /* width: 50px; */
+    margin: 40px 60px;
+}
+.right-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 60px;
+    
+}
+.follow-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.follow-links img:hover{
+    opacity: .6;
+}
+#fb{
+    width: 50px;
+}
+.left-footer .links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 60px;
+
+}
+.left-footer .links img{
+    width: 15px;
+    margin-right: 10px;
+}
+.left-footer .links a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+.left-footer .links a:hover{
+    opacity: .6;
+}
+.copyright{
+    margin: auto;
 }
