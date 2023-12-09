@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    transition: .2s;
+    /* transition: .2s; */
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -86,7 +86,7 @@ body {
 
 
 nav {
-    width: 98%;
+    width: 98vw;
     height: 80px;
     display: flex;
     align-items: center;
@@ -433,7 +433,6 @@ nav .links-side a:nth-child(4):hover {
     align-items: center;
     gap: 150px;
     margin-top: 150px;
-    /* padding: 170px; */
 }
 
 .page2 .project-title {
