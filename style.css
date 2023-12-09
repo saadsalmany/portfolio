@@ -130,6 +130,13 @@ nav .links-side {
     margin-top: 20px;
 
 }
+nav .menubtn {
+    position: relative;
+    left: 40%;
+    padding-top: 30px;
+    display: none;
+}
+
 
 nav .links-side a {
     margin-left: 50px;
