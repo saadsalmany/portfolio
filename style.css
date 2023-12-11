@@ -130,6 +130,14 @@ nav .links-side {
     margin-top: 20px;
 
 }
+nav .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+    background: gray;
+}
 nav .menubtn {
     position: relative;
     left: 40%;
@@ -431,6 +439,7 @@ nav .links-side a:nth-child(4):hover {
     position: absolute;
 }
 
+
 .page2 {
     width: 100%;
     height: 100vh;
@@ -457,6 +466,9 @@ nav .links-side a:nth-child(4):hover {
 .page2 .project-title img,
 h2 {
     width: 55px;
+}
+section .slider, .swiper, .swiper-wrapper,.swiper-slide,.cd{
+    display: none;
 }
 
 .cards {

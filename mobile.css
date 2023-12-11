@@ -307,19 +307,23 @@
     }
 
     .page2 {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         display: flex;
         background-color: #181614;
         flex-direction: column;
         align-items: center;
-        gap: 150px;
+        gap: 100px;
         margin-top: 150px;
     }
+    .carousel-container{
+        display: unset;
+    }
+    
 
     .page2 .project-title {
-        width: 250px;
-        height: 90px;
+        width: 200px;
+        height: 60px;
         background-color: white;
         display: flex;
         align-items: center;
@@ -329,177 +333,182 @@
 
     }
 
-    .page2 .project-title img,
-    h2 {
-        width: 55px;
+    .page2 .project-title img {
+        width: 40px;
     }
-
-    .cards {
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-
-
-
-    }
-
-    .cards .cd {
-        width: 410px;
-        height: 500px;
-        border: 1px solid white;
-        border-radius: 40px;
-
-    }
-
-    .cards .card1,
-    .card2,
-    .card3 {
-        display: flex;
-        align-items: center;
-        padding-top: 20px;
-        flex-direction: column;
-
-    }
-
-    .card1 .webImg {
-        width: 350px;
-        height: 300px;
-        background-image: url(images/website-image.png);
-        background-position: center;
-        background-size: cover;
-        border: 1px solid white;
-        border-radius: 40px;
-    }
-
-    .card1 .pText {
-        color: #FFF;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 300px;
-        padding-top: 15px;
-        padding-bottom: 25px;
-    }
-
-    .card1 .pBtn {
-        width: 240px;
-        height: 50px;
-        border: 1px solid white;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
-    }
-
-    .pBtn .div1 {
-        font-size: 20px;
-        color: white;
-    }
-
-    .pBtn .div2 {
-        background-color: white;
-        width: 130px;
-        height: 50px;
-        border-radius: 20px;
-        color: #181614;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        left: 8px;
-        border: 1px solid white;
-    }
-
-    .pBtn .div2:hover {
-        transform: scale(1.1);
-    }
-
-    .pBtn .div2>a {
-        width: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: #181614;
-    }
-
-    .card2 .pbg {
-        width: 350px;
-        height: 300px;
-        background-image: url(images/uiux-image.png);
-        background-position: center;
-        background-size: cover;
-        border: 1px solid white;
-        border-radius: 40px;
-    }
-
-    .card2 .pText {
-        color: #FFF;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 300px;
-        padding-top: 15px;
-        padding-bottom: 25px;
-    }
-
-    .card2 .pBtn {
-        width: 240px;
-        height: 50px;
-        border: 1px solid white;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
-    }
-
-    .card2 .pBtn .div2 {
-        left: 33px;
+    .page2 .project-title h1{
+        font-size: 25px;
     }
 
 
-    .card3 .pbg {
-        width: 350px;
-        height: 300px;
-        background-image: url(images/app-img.png);
-        background-position: center;
-        background-size: cover;
-        border: 1px solid white;
-        border-radius: 40px;
-    }
 
-    .card3 .pText {
-        color: #FFF;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 300px;
-        padding-top: 15px;
-        padding-bottom: 25px;
-    }
+        /* .cards {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            display: none;
 
-    .card3 .pBtn {
-        width: 240px;
-        height: 50px;
-        border: 1px solid white;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
-    }
 
-    .card3 .pBtn .div1 {
-        font-size: 13px
-    }
+
+        }
+
+        .cards .cd {
+            width: 410px;
+            height: 500px;
+            border: 1px solid white;
+            border-radius: 40px;
+
+        }
+
+        .cards .card1,
+        .card2,
+        .card3 {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            flex-direction: column;
+
+        }
+
+        .card1 .webImg {
+            width: 350px;
+            height: 300px;
+            background-image: url(images/website-image.png);
+            background-position: center;
+            background-size: cover;
+            border: 1px solid white;
+            border-radius: 40px;
+        }
+
+        .card1 .pText {
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 300px;
+            padding-top: 15px;
+            padding-bottom: 25px;
+        }
+
+        .card1 .pBtn {
+            width: 240px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .pBtn .div1 {
+            font-size: 20px;
+            color: white;
+        }
+
+        .pBtn .div2 {
+            background-color: white;
+            width: 130px;
+            height: 50px;
+            border-radius: 20px;
+            color: #181614;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 8px;
+            border: 1px solid white;
+        }
+
+        .pBtn .div2:hover {
+            transform: scale(1.1);
+        }
+
+        .pBtn .div2>a {
+            width: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #181614;
+        }
+
+        .card2 .pbg {
+            width: 350px;
+            height: 300px;
+            background-image: url(images/uiux-image.png);
+            background-position: center;
+            background-size: cover;
+            border: 1px solid white;
+            border-radius: 40px;
+        }
+
+        .card2 .pText {
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 300px;
+            padding-top: 15px;
+            padding-bottom: 25px;
+        }
+
+        .card2 .pBtn {
+            width: 240px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .card2 .pBtn .div2 {
+            left: 33px;
+        }
+
+
+        .card3 .pbg {
+            width: 350px;
+            height: 300px;
+            background-image: url(images/app-img.png);
+            background-position: center;
+            background-size: cover;
+            border: 1px solid white;
+            border-radius: 40px;
+        }
+
+        .card3 .pText {
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 300px;
+            padding-top: 15px;
+            padding-bottom: 25px;
+        }
+
+        .card3 .pBtn {
+            width: 240px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .card3 .pBtn .div1 {
+            font-size: 13px
+        } */
 
     .page3 {
         width: 100%;
