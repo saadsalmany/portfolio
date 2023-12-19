@@ -15,10 +15,16 @@ var typed = new Typed(".autoType", {
 //   document.documentElement.style.overflow = 'auto';  // or 'scroll' to allow scrolling
 // }, 4000); // 4 seconds in milliseconds (4,000 milliseconds)
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+
+  // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+    el: '.swiper-pagination',
+    clickable: true
   },
+
+
 });

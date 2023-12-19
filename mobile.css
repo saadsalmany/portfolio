@@ -339,249 +339,316 @@
     .page2 .project-title h1{
         font-size: 25px;
     }
+    .swiper {
+        width: 70vw;
+        height: 80vh;
+        background: #181614;
+        margin-top: 50px;
+    
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        color: white;
+        
+        
+    }
+    
+    .cards {
+        cursor: grab;
+        width: 275px;
+        height: 420px;
+        border: 1px solid white;
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid white;
+        border-radius: 40px;
+        position: relative;
+        left: 0%;
+    }
+    
+    .webimg {
+        width: 230px;
+        height: 210px;
+        background-image: url(images/website-image.png);
+        background-position: center;
+        background-size: cover;
+        border: 1px solid white;
+        border-radius: 40px;
+    }
+    
+    .pText {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.5px;
+        word-spacing: 1px;
+        width: 200px;
+        padding-top: 20px;
+        padding-bottom: 18px;
+    }
+    
+    .pbtn {
+        width: 210px;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    
+    .div1 {
+        font-size: 20px;
+        color: white;
+    }
+    .div2 {
+        background-color: white;
+        width: 130px;
+        height: 50px;
+        border-radius: 20px;
+        color: #181614;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 8px;
+        border: 1px solid white;
+    }
+    .div2:hover {
+        transform: scale(1.1);
+    }
+    .div2>a {
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #181614;
+    }
+    .card2 .webimg{
+        background: url(images/uiux-image.png);
+    }
+    .card3 .webimg{
+        background-image: url(images/app-img.png);
+    }
+    #c3T{
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.5px;
+        word-spacing: 1px;
+        width: 200px;
+        padding-top: 20px;
+        padding-bottom: 18px;
+
+    }
+    
+    
+    .swiper-pagination {
+        display: flex !important;
+        bottom: -70px !important;
+        justify-content: center !important;
+        gap: 15px !important;
+        margin-bottom: 23vh !important;
+    }
+    
+    .swiper-pagination-bullet {
+        background: rgb(255, 255, 255) !important;
+    
+    }
+    
+    
+    
+    .swiper-pagination-bullet-active {
+        background-color: white !important;
+    }
+    
+    .swiper-pagination-bullet {
+        box-shadow: 0px 0px 10px white !important;
+    }
 
 
 
-        /* .cards {
-            display: flex;
-            flex-direction: row;
-            gap: 50px;
-            display: none;
-
-
-
-        }
-
-        .cards .cd {
-            width: 410px;
-            height: 500px;
-            border: 1px solid white;
-            border-radius: 40px;
-
-        }
-
-        .cards .card1,
-        .card2,
-        .card3 {
-            display: flex;
-            align-items: center;
-            padding-top: 20px;
-            flex-direction: column;
-
-        }
-
-        .card1 .webImg {
-            width: 350px;
-            height: 300px;
-            background-image: url(images/website-image.png);
-            background-position: center;
-            background-size: cover;
-            border: 1px solid white;
-            border-radius: 40px;
-        }
-
-        .card1 .pText {
-            color: #FFF;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            width: 300px;
-            padding-top: 15px;
-            padding-bottom: 25px;
-        }
-
-        .card1 .pBtn {
-            width: 240px;
-            height: 50px;
-            border: 1px solid white;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-        }
-
-        .pBtn .div1 {
-            font-size: 20px;
-            color: white;
-        }
-
-        .pBtn .div2 {
-            background-color: white;
-            width: 130px;
-            height: 50px;
-            border-radius: 20px;
-            color: #181614;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            left: 8px;
-            border: 1px solid white;
-        }
-
-        .pBtn .div2:hover {
-            transform: scale(1.1);
-        }
-
-        .pBtn .div2>a {
-            width: 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: #181614;
-        }
-
-        .card2 .pbg {
-            width: 350px;
-            height: 300px;
-            background-image: url(images/uiux-image.png);
-            background-position: center;
-            background-size: cover;
-            border: 1px solid white;
-            border-radius: 40px;
-        }
-
-        .card2 .pText {
-            color: #FFF;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            width: 300px;
-            padding-top: 15px;
-            padding-bottom: 25px;
-        }
-
-        .card2 .pBtn {
-            width: 240px;
-            height: 50px;
-            border: 1px solid white;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-        }
-
-        .card2 .pBtn .div2 {
-            left: 33px;
-        }
-
-
-        .card3 .pbg {
-            width: 350px;
-            height: 300px;
-            background-image: url(images/app-img.png);
-            background-position: center;
-            background-size: cover;
-            border: 1px solid white;
-            border-radius: 40px;
-        }
-
-        .card3 .pText {
-            color: #FFF;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            width: 300px;
-            padding-top: 15px;
-            padding-bottom: 25px;
-        }
-
-        .card3 .pBtn {
-            width: 240px;
-            height: 50px;
-            border: 1px solid white;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-        }
-
-        .card3 .pBtn .div1 {
-            font-size: 13px
-        } */
 
     .page3 {
         width: 100%;
         height: 100vh;
         background-color: #181614;
+        margin-top: 170px;
         display: flex;
-        align-items: center;
-        /* padding: 170px; */
-        margin-top: 300px;
         flex-direction: column;
-        gap: 350px;
+        gap: 0px;
 
     }
-
     .page3 .services-title {
-        width: 270px;
-        height: 70px;
+        width: 230px;
+        height: 60px;
         background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
         padding: 10px;
+        position: relative;
+        left: -10%;
+    }
+    
+    .page3 .services-title img{
+        width: 40px;
+    }
+    .page3 .services-title h1{
+        font-size: 25px;
 
     }
-
-    .page3 .services-title img,
-    h2 {
-        width: 55px;
-    }
-
-    .page3 .slines {
+    
+    .page3 .slines{
         display: flex;
         flex-direction: row;
         gap: 100px;
         position: relative;
         bottom: 345px;
+        display: none;
     }
+    .page3 .serviceContainer{
+        width: 400px;
+        height: 500px;
+        /* background-color: red; */
+        display: flex;
+        margin: 0;
+        padding: 0;
+        
+    }
+   .page3 .serviceContainer .serv1{
+        margin-left: 15%;
+        width: 1.2px;
+        /* background-color: white; */
+        height: 600px;
+        /* overflow: hidden; */
+    }
+    .serviceContainer .serv2{
+        display: flex;
+        width: 300px;
+        height: 600px;
+        /* background-color: rebeccapurple; */
+        flex-direction: column;
+        /* gap: 50px; */
+        
+    }
+    .serv2 .subserv{
+        width: 300;
+        height: 500px;
+        /* background-color: rgba(255, 255, 255, 0.178); */
+    }
+    .ss1{
+        padding-top:50px ;
+        margin-bottom: 40px;
+    }
+    .subserv h1{
+        font-size: 17px;
+        color: white;
+        font-weight: normal;
+        position: relative;
+        left: 21.5%;
+    }
+    .subserv p{
+        color: white;
+        font-size: 8px;
+        width: 140px;
+        line-height: 12px;
+        letter-spacing: .5px;
+        position: relative;
+        left: 30%;
+        text-align: center;
 
-    .page3 .slines h3 {
+    }
+    .subserv .ssimg{
+        width: 100px;
+        position: relative;
+        left: 37%;
+        margin-top: 15px;
+        margin-bottom: 5px;
+
+    }
+    .ss2 h1{
+        position: relative;
+        left: 37%;
+        bottom: 15.5%;
+
+
+    }
+    .ss2 .ssimg2{
+        width: 100px;
+        position: relative;
+        left: 43%;
+        margin-bottom: 5px;
+
+    }
+    .ss2 p{
+        position: relative;
+        left: 36%;
+    }
+    .ss3{
+        margin-top: 30px;
+    }
+    .ss3 h1{
+        position: relative;
+        left: 27%;
+        bottom: 12%;
+        
+    }
+    
+    .ss3 .ssimg3{
+        width: 90px;
+        position: relative;
+        left: 42%;
+    }
+    .ss3 p{
+        position: relative;
+        left: 33%;
+        margin-top: 5px;
+    }
+    .page3 .slines h3{
         color: white;
         position: absolute;
         font-weight: lighter;
         width: fit-content;
         height: fit-content;
+        display: none;
     }
-
-    .page3 .slines .wdheading {
+    .page3 .slines .wdheading{
         left: -180px;
         bottom: 5px;
     }
-
-    .page3 .slines .uiuxheading {
+    .page3 .slines .uiuxheading{
         left: 187px;
         bottom: 27px;
     }
-
-    .page3 .slines .adheading {
+    .page3 .slines .adheading{
         left: 530px;
         bottom: 4px;
     }
-
-    .page3 .serviceSection {
+    
+    .page3 .serviceSection{
         display: flex;
         gap: 200px;
         flex-direction: row;
         position: relative;
         bottom: 660px;
         flex-direction: row;
-
+        display: none;
+        
     }
-
-    .page3 .serviceTexts {
+    .page3 .serviceTexts{
         display: flex;
         flex-direction: column;
         color: white;
@@ -590,35 +657,32 @@
         width: 50px;
         justify-content: center;
         align-items: center;
+        display: none;
     }
-
-    .serviceTexts .text1,
-    .text2,
-    .text3 {
+    .serviceTexts .text1,.text2,.text3{
         font-size: 10px;
         /* width: 150px; */
         text-align: center;
         position: relative;
-
+        display: none;
+        
     }
-
-    .text1 {
+    .text1{
         top: -45px;
         right: 338px;
         width: 178px;
     }
-
-    .text2 {
+    .text2{
         top: -109px;
         right: -4px;
         width: 151px;
     }
-
-    .text3 {
+    .text3{
         top: -162px;
         right: -346px;
         width: 141px;
     }
+
 
     .page4 {
         height: 100vh;
@@ -687,7 +751,6 @@
 
     }
 
-    /* .page4 .contact-contents .Csection2 .contactForm .inputt     */
 
 
     .page4 .contact-contents .Csection2 .contactForm .inputt label {

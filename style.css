@@ -297,6 +297,7 @@ nav .links-side a:hover::after {
     color: white;
     padding: 9px 17px;
     border: 0.5px solid white;
+    transition: .7s;
 }
 
 
@@ -415,7 +416,7 @@ nav .links-side a:hover::after {
 
 .page2 {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     background-color: #181614;
     flex-direction: column;
@@ -433,6 +434,7 @@ nav .links-side a:hover::after {
     justify-content: center;
     gap: 20px;
     padding: 10px;
+    margin-bottom: -20px;
 
 }
 
@@ -440,38 +442,41 @@ nav .links-side a:hover::after {
 h2 {
     width: 55px;
 }
-section .slider, .swiper, .swiper-wrapper,.swiper-slide,.cd{
-    display: none;
+
+
+/*slider css */
+
+.swiper {
+    width: 70vw;
+    height: 80vh;
+    background: #181614;
+    margin-top: 50px;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    color: white;
+    
+    
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-
-
-
-}
-
-.cards .cd {
-    width: 410px;
-    height: 500px;
+    cursor: grab;
+    width: 400px;
+    height: 530px;
     border: 1px solid white;
-    border-radius: 40px;
-
-}
-
-.cards .card1,
-.card2,
-.card3 {
+    padding-top: 40px;
     display: flex;
     align-items: center;
-    padding-top: 20px;
     flex-direction: column;
-
+    border: 1px solid white;
+    border-radius: 40px;
+    position: relative;
+    left: 31%;
 }
 
-.card1 .webImg {
+.webimg {
     width: 350px;
     height: 300px;
     background-image: url(images/website-image.png);
@@ -481,35 +486,36 @@ section .slider, .swiper, .swiper-wrapper,.swiper-slide,.cd{
     border-radius: 40px;
 }
 
-.card1 .pText {
+.pText {
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 15px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
     width: 300px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 25px;
 }
 
-.card1 .pBtn {
-    width: 240px;
+.pbtn {
+    width: 210px;
     height: 50px;
     border: 1px solid white;
     border-radius: 20px;
     display: flex;
     align-items: center;
     padding-left: 20px;
+    margin-top: 10px;
 }
 
-.pBtn .div1 {
+.div1 {
     font-size: 20px;
     color: white;
 }
-
-.pBtn .div2 {
+.div2 {
     background-color: white;
     width: 130px;
     height: 50px;
@@ -522,12 +528,10 @@ section .slider, .swiper, .swiper-wrapper,.swiper-slide,.cd{
     left: 8px;
     border: 1px solid white;
 }
-
-.pBtn .div2:hover {
+.div2:hover {
     transform: scale(1.1);
 }
-
-.pBtn .div2>a {
+.div2>a {
     width: 35px;
     display: flex;
     justify-content: center;
@@ -535,80 +539,36 @@ section .slider, .swiper, .swiper-wrapper,.swiper-slide,.cd{
     text-decoration: none;
     color: #181614;
 }
-
-.card2 .pbg {
-    width: 350px;
-    height: 300px;
-    background-image: url(images/uiux-image.png);
-    background-position: center;
-    background-size: cover;
-    border: 1px solid white;
-    border-radius: 40px;
+.card2 .webimg{
+    background: url(images/uiux-image.png);
 }
-
-.card2 .pText {
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 300px;
-    padding-top: 15px;
-    padding-bottom: 25px;
-}
-
-.card2 .pBtn {
-    width: 240px;
-    height: 50px;
-    border: 1px solid white;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-}
-
-.card2 .pBtn .div2 {
-    left: 33px;
-}
-
-
-.card3 .pbg {
-    width: 350px;
-    height: 300px;
+.card3 .webimg{
     background-image: url(images/app-img.png);
-    background-position: center;
-    background-size: cover;
-    border: 1px solid white;
-    border-radius: 40px;
 }
 
-.card3 .pText {
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 300px;
-    padding-top: 15px;
-    padding-bottom: 25px;
+
+
+.swiper-pagination {
+    display: flex !important;
+    bottom: -70px !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    margin-bottom: 11vh !important;
 }
 
-.card3 .pBtn {
-    width: 240px;
-    height: 50px;
-    border: 1px solid white;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+.swiper-pagination-bullet {
+    background: rgb(255, 255, 255) !important;
+
 }
 
-.card3 .pBtn .div1 {
-    font-size: 13px
+
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
+.swiper-pagination-bullet {
+    box-shadow: 0px 0px 10px white !important;
 }
 
 .page3 {
@@ -639,6 +599,9 @@ section .slider, .swiper, .swiper-wrapper,.swiper-slide,.cd{
 .page3 .services-title img,
 h2 {
     width: 55px;
+}
+.page3 .serviceContainer{
+    display: none;
 }
 
 .page3 .slines{
