@@ -6,13 +6,25 @@
     transition: .2s;
     -webkit-tap-highlight-color: transparent;
 }
+::-webkit-scrollbar{
+    width: 1vw;
+}
+::-webkit-scrollbar-track{
+    border-radius: 15vw;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15vw;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
 
 html,
 body {
     width: 100%;
     height: 100%;
     background-color: #181614;
-    scroll-behavior: smooth;
 
 }
 
@@ -795,7 +807,7 @@ h2 {
     background-color: white;
 }
 .page5{
-    height: 120vh;
+    height: 132vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -810,12 +822,30 @@ h2 {
     color: white;
     width: 1000px;
     margin-top: 50px;
+    word-spacing: 1px;
+    letter-spacing: .2px;
+    font-size: 16px;
+    line-height: 30px;
 }
 .page5 .skilled{
     display: flex;
     gap: 150px;
     margin-top: 155px;
     justify-content: center;
+}
+
+.skilled ul{
+    margin-top: 15px;
+    position: relative;
+    left: 18.5px;
+}
+.skilled ul li{
+    color: white;
+    opacity: .8;
+    line-height: 20px;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+    font-size: 13px;
 }
 footer{
     border: 1px solid white;
@@ -850,6 +880,7 @@ footer{
 #fb{
     width: 50px;
 }
+
 .left-footer .links{
     display: flex;
     flex-direction: column;
@@ -870,5 +901,5 @@ footer{
     opacity: .6;
 }
 .copyright{
-    margin: auto;
+    margin: 15px;
 }
