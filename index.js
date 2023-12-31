@@ -29,3 +29,13 @@ const swiper = new Swiper('.swiper', {
 
 });
 
+const menu=document.querySelector('.Mobile-links-side');
+function showsidebar(){
+  menu.style.transform='translateX(0px)';
+}
+function hidesidebar(){
+  menu.style.transform='translateX(250px)';
+}
+
+var click=document.oncl
+console.log(click)

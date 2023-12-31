@@ -70,6 +70,48 @@
         display: none;
 
     }
+    nav .Mobile-links-side{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding-left: 30px;
+        padding-top: 50px;
+        width: 60vw;
+        height: 100vh;
+        background: #1e1e1ec1;
+        backdrop-filter: blur(8px);
+        color: #181614;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 999;
+        transition: .3s ease-in-out;
+        transform: translateX(250px);
+    }
+    .Mobile-links-side>img{
+        width: 32px;
+        position: absolute;
+        right:  30px;
+        top: 43px;
+        z-index: 1000;
+
+    }
+    .Mobile-links-side>a img{
+        width: 35px;
+        position: relative;
+        bottom: 8px;
+        left: 88px;
+    }
+    nav .Mobile-links-side a{
+        text-decoration: none;
+        color: white;
+    }
+    nav .Mobile-links-side a:hover{
+        opacity: .4;
+    }
+    .Mobile-links-side .contactbtn{
+        display: none;
+    }
 
     .sections {
         width: 100%;
