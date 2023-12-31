@@ -1,11 +1,17 @@
 @media (max-width:600px) {
 
+    #page1,#page2,#page3,#page4,#page5{
+        overflow: hidden;
+    }
+    
     #page1 {
         width: 100%;
         height: 100vh;
         background-color: #181614;
+        
 
     }
+
 
 
 
@@ -19,7 +25,6 @@
         overflow: hidden;
         position: fixed;
         background-color: #181614;
-        /* background: gray; */
 
 
 
@@ -725,7 +730,7 @@
 
 
     .page4 {
-        height: 100vh;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -733,37 +738,69 @@
     }
 
     .page4 .contact-title img {
-        width: 270px;
+        width: 200px;
+        margin-bottom: 30px;
 
     }
 
     .page4 .contact-contents {
         display: flex;
-        gap: 450px;
+        gap: 100px;
+        flex-direction: column;
     }
 
     .page4 .contact-contents .cs {
         position: relative;
-        top: 125px;
+        top: 50px;
 
     }
 
     .page4 .contact-contents .Csection1 {
         display: flex;
-        flex-direction: column;
-        gap: 100px;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+    .Csection1 .phone img {
+        width: 140px;
+        position: relative;
+        right: -88%;
+        top: 0%;
+    }
+
+    .Csection1 .address img {
+        width: 170px;
+        position: relative;
+        right: -53%;
+        top: 0%;
+    }
+
+    .Csection1 .email img {
+        width: 200px;
+        position: relative;
+        right: 82%;
+        top: 130%;
+        margin-top: 18px;
+
+    }
+
+    .Csection2 .contactForm {
+        margin-top: 70px;
     }
 
     .page4 .contact-contents .Csection2 .contactForm {
         border: 1px solid white;
         border-radius: 17px;
-        width: 400px;
-        height: 580px;
+        width: 330px;
+        height: 560px;
         display: flex;
         color: white;
         flex-direction: column;
         padding: 30px;
         gap: 50px;
+        position: relative;
+        left: 26.5vw;
 
     }
 
@@ -861,7 +898,7 @@
     }
 
     .page5 {
-        height: 120vh;
+        height: 184vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -869,22 +906,52 @@
     }
 
     .page5 .about-title img {
-        width: 275px;
+        width: 200px;
 
     }
 
     .page5 .about-text {
         text-align: center;
         color: white;
-        width: 1000px;
+        width: 353px;
         margin-top: 50px;
+        word-spacing: 1.5px;
+        letter-spacing: 0px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .about-text br{
+        display: none;
     }
 
     .page5 .skilled {
         display: flex;
-        gap: 150px;
+        gap: 80px;
         margin-top: 155px;
         justify-content: center;
+        flex-direction: column;
+    }
+    .skilled .skills img{
+        width: 130px;
+    }
+    .skilled .education img{
+        width: 200px;
+    }
+    .skilled .experience img{
+        width: 200px;
+    }
+    .skilled ul{
+        margin-top: 15px;
+        position: relative;
+        left: 18.5px;
+    }
+    .skilled ul li{
+        color: white;
+        opacity: .8;
+        line-height: 20px;
+        letter-spacing: .5px;
+        word-spacing: 1px;
+        font-size: 12px;
     }
 
     footer {
@@ -899,23 +966,35 @@
     }
 
     .name img {
-        /* width: 50px; */
-        margin: 40px 60px;
+        width: 130px;
+        margin-left:  20px;
+        margin-top: 40px;
     }
-
+    
     .right-footer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 30px;
-        margin: 40px 60px;
+        gap: 45px;
+        margin: 40px 30px;
 
+    }
+    .follow-heading img{
+        width: 160px;
+        transform: translateX(-30px);
     }
 
     .follow-links {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
+        transform: translateX(-30px);
+    }
+    .fblink .fb{
+        width: 40px;
+    }
+    .follow-links a img{
+        width: 45px;
     }
 
     .follow-links img:hover {
@@ -929,8 +1008,8 @@
     .left-footer .links {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        margin-left: 60px;
+        gap: 15px;
+        margin-left: 25px;
 
     }
 
