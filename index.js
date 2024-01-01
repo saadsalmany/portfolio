@@ -2,18 +2,18 @@
 
 var typed = new Typed(".autoType", {
     strings: ['UI/UX Designer', 'Android Developer', 'Web Developer'],
-    typeSpeed: 80, startDelay: 6000
+    typeSpeed: 100, loop: true, 
   });
 
-//   // Disable scrolling by setting overflow to "hidden"
-// document.body.style.overflow = 'hidden';
-// document.documentElement.style.overflow = 'hidden';
+  // Disable scrolling by setting overflow to "hidden"
+document.body.style.overflow = 'hidden';
+document.documentElement.style.overflow = 'hidden';
 
-// // Re-enable scrolling after 4 seconds
-// setTimeout(function() {
-//   document.body.style.overflow = 'unset';  // or 'scroll' to allow scrolling
-//   document.documentElement.style.overflow = 'unset';  // or 'scroll' to allow scrolling
-// }, 4000); // 4 seconds in milliseconds (4,000 milliseconds)
+// Re-enable scrolling after 4 seconds
+setTimeout(function() {
+  document.body.style.overflow = 'unset';  // or 'scroll' to allow scrolling
+  document.documentElement.style.overflow = 'unset';  // or 'scroll' to allow scrolling
+}, 4000); // 4 seconds in milliseconds (4,000 milliseconds)
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
