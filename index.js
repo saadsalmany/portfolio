@@ -37,6 +37,12 @@ function hidesidebar(){
   menu.style.transform='translateX(250px)';
 }
 
-var click=document.oncl
-console.log(click)
 
+// reset form when clicking input button
+
+let reset=document.getElementById('resetBtn')
+let input=document.getElementsByTagName('input')
+reset.addEventListener('click',()=>{
+  input.forEach(input => input.value='')
+    
+  });

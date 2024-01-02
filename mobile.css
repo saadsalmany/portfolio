@@ -920,18 +920,18 @@
     }
 
     .sumbitBtn button:nth-child(1):hover {
-        background: white;
-        color: #181614;
+        background: #181614;
+        color: white;
     }
 
     .sumbitBtn button:nth-child(2):hover {
-        background-color: #181614;
-        color: white;
+        background-color: white;
+        color: #181614;
     }
 
     .sumbitBtn button:nth-child(1):active {
-        background: #181614;
-        color: white;
+        background: white;
+        color: #181614;
     }
 
     .sumbitBtn button:nth-child(2):active {
@@ -940,7 +940,7 @@
     }
 
     .page5 {
-        height: 184vh;
+        height: 180vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1072,6 +1072,7 @@
 
     .copyright {
         margin: auto;
+        transform: translateY(1px);
     }
 
 
