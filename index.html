@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div id="loader">
+    <!-- <div id="loader">
         <div id="wrapperload">
             <div class="elem"><img src="images/typelogo.svg" alt=""></div>
             <div class="elem">
@@ -31,7 +31,7 @@
             </div>
             <div class="elem"><img src="images/typelogo.svg" alt=""></div>
         </div>
-    </div>
+    </div> -->
     
     <div id="page1">
 
@@ -252,27 +252,43 @@
                 <div class="email"><img src="images/email.svg" alt=""></div>
             </div>
             <div class="Csection2 cs">
-                <form action="" class="contactForm">
+                
+<!-- <form class="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    <h2>Get in touch</h2>
+
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+    <div class="h-captcha" data-captcha="true"></div>
+    <button type="submit">Submit Form</button>
+
+</form> -->
+
+                <form id="form" action="https://api.web3forms.com/submit" method="POST" class="contactForm">
                     <h2>Get in touch</h2>
                     <div class="input1 inputt">
-                        <label for="nameInput"><img src="images/person.svg" alt=""> Full Name</label>
+                        <input type="hidden" name="access_key" value="897bf87f-c6d6-4332-a813-0bdd4d77f93a">
+                        <label id="labelName" for="nameInput"><img src="images/person.svg" alt=""> Full Name</label>
                         <input type="text" id="nameInput" required>
                     </div>
                     <div class="input2 inputt">
                         <label for="emailInput"><img src="images/email2.svg" alt="">Email</label>
-                        <input type="text" id="emailInput">
+                        <input type="text" id="emailInput" required>
                     </div>
                     <div class="input3 inputt">
                         <label for="messageArea"><img src="images/message-square_svgrepo.com.svg" alt="">Type your
                             message here</label>
-                        <textarea maxlength="400" id="messageArea" cols="10" rows="10"
+                        <textarea required maxlength="400" id="messageArea" cols="10" rows="10"
                             placeholder="Enter message"></textarea>
                     </div>
                     <div class="sumbitBtn">
-                        <button>Reset</button>
-                        <button>Send</button>
+                        <button id="resetBtn">Reset</button>
+                        <button id="sendBtn" >Send</button>
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
@@ -368,6 +384,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="index.js"></script>
 
 </body>
