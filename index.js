@@ -1,19 +1,19 @@
 //Typed js library
 
 var typed = new Typed(".autoType", {
-    strings: ['UI/UX Designer', 'Android Developer', 'Web Developer'],
+    strings: ['UI/UX Designer', 'Web Developer'],
     typeSpeed: 100, loop: true, 
   });
 
-  // Disable scrolling by setting overflow to "hidden"
-document.body.style.overflow = 'hidden';
-document.documentElement.style.overflow = 'hidden';
+//   // Disable scrolling by setting overflow to "hidden"
+// document.body.style.overflow = 'hidden';
+// document.documentElement.style.overflow = 'hidden';
 
-// Re-enable scrolling after 4 seconds
-setTimeout(function() {
-  document.body.style.overflow = 'unset';  // or 'scroll' to allow scrolling
-  document.documentElement.style.overflow = 'unset';  // or 'scroll' to allow scrolling
-}, 4000); // 4 seconds in milliseconds (4,000 milliseconds)
+// // Re-enable scrolling after 4 seconds
+// setTimeout(function() {
+//   document.body.style.overflow = 'unset';  // or 'scroll' to allow scrolling
+//   document.documentElement.style.overflow = 'unset';  // or 'scroll' to allow scrolling
+// }, 4000); // 4 seconds in milliseconds (4,000 milliseconds)
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -46,3 +46,22 @@ reset.addEventListener('click',()=>{
   input.forEach(input => input.value='')
     
   });
+
+  //js for precisely smooth scroll for project section
+
+  const navLinks = document.querySelectorAll('nav .links-side a'); // Select all anchor tags within the navigation bar
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default anchor link behavior
+    const targetSection = document.getElementById(this.hash.substring(1)); // Get section element based on link's hash
+    const viewportTop = window.scrollY || document.documentElement.scrollTop; // Get current scroll position
+    const sectionTop = targetSection.offsetTop; // Get target section's top position
+    const offset = sectionTop - viewportTop; // Calculate offset
+
+    targetSection.scrollIntoView({
+      behavior: "smooth",
+      block: "end" // Ensures section starts at the top of the viewport
+    });
+  });
+});
